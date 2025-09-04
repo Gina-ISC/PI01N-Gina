@@ -90,7 +90,7 @@ public class Main {
 
         System.out.println("Ingrese el id de la mascota: ");
         int id = scanner.nextInt();
-        scanner.nextLine();
+        scanner.nextLine().trim();
 
         System.out.println("Ingrese la cedula del propietario: ");
         String cedulaPropietario = scanner.nextLine().trim();
@@ -114,7 +114,7 @@ public class Main {
 
         System.out.println("Ingrese el ID de la mascota: ");
         int id = scanner.nextInt();
-        scanner.nextLine();
+        scanner.nextLine().trim();
 
         Mascota mascota = clinicaVeterinaria.buscarMascotaPorId(id);
 
